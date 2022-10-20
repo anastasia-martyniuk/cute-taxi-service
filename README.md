@@ -22,6 +22,6 @@ What's all the bells and whistles this project can perform?
 * Managing drivers, cars & manufacturers directly from website
 
 ## Links
-- Project homepage: https://your.github.com/awesome-project/
+- Project homepage: https://cute-taxi-service.herokuapp.com/
 - Repository: https://github.com/anastasia-martyniuk/taxi-service
 ![Website Interface](img.png)
