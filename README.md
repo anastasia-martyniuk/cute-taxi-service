@@ -24,4 +24,7 @@ What's all the bells and whistles this project can perform?
 ## Links
 - Project homepage: https://cute-taxi-service.herokuapp.com/
 - Repository: https://github.com/anastasia-martyniuk/taxi-service
+  *username: user
+  *password: User123456
+
 ![Website Interface](img.png)
