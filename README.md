@@ -6,7 +6,8 @@ Helps the owner of the service to monitor the number of staff.
 
 Python3 must be already installed!
 
-```shell for Windows OS:
+```shell 
+for Windows OS:
 git clone git@github.com:anastasia-martyniuk/taxi-service.git
 python -m venv venv
 source venv/Scripts/activate
@@ -14,7 +15,8 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-```shell for MAC OS:
+```shell 
+for MAC OS:
 git clone git@github.com:anastasia-martyniuk/taxi-service.git
 python3 -m venv venv
 source venv/bin/activate
