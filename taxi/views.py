@@ -87,17 +87,17 @@ class CarListView(LoginRequiredMixin, generic.ListView):
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(CarListView, self).get_context_data(**kwargs)
 
-        model = self.request.GET.get("model", "")
+        model = self.request.GET.get("model")
 
         context["search_form"] = CarSearchForm(initial={"model": model})
 
         return context
 
     def get_queryset(self):
-        model = self.request.GET.get("model")
+        form = CarSearchForm(self.request.GET)
 
-        if model:
-            return self.queryset.filter(model__icontains=model)
+        if form.is_valid():
+            return self.queryset.filter(model__icontains=form.cleaned_data["model"])
 
         return self.queryset
 
@@ -169,7 +169,7 @@ class DriverDeleteView(LoginRequiredMixin, generic.DeleteView):
 @login_required
 def toggle_assign_to_car(request, pk):
     driver = Driver.objects.get(id=request.user.id)
-    if Car.objects.get(id=pk) in driver.cars.all():  # probably could check if car exists
+    if Car.objects.get(id=pk) in driver.cars.all():
         driver.cars.remove(pk)
     else:
         driver.cars.add(pk)
