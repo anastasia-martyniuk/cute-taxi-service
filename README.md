@@ -1,13 +1,14 @@
 # Taxi service
 Helps drivers create their own profile with detailed information and gives them the opportunity to choose the car on which they will work.
+
 Helps the owner of the service to monitor the number of staff.
 
 ## Installing / Getting started
 
 Python3 must be already installed!
 
+**for Windows OS**:
 ```shell 
-for Windows OS:
 git clone git@github.com:anastasia-martyniuk/taxi-service.git
 python -m venv venv
 source venv/Scripts/activate
@@ -15,8 +16,8 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
+**for MAC OS**:
 ```shell 
-for MAC OS:
 git clone git@github.com:anastasia-martyniuk/taxi-service.git
 python3 -m venv venv
 source venv/bin/activate
@@ -32,7 +33,11 @@ What's all the bells and whistles this project can perform?
 * Managing drivers, cars & manufacturers directly from website
 
 ## Links
-- Project homepage: https://cute-taxi-service.herokuapp.com/ (username: user, password: User123456)
+- Project homepage: https://cute-taxi-service.herokuapp.com/
+
+  _**Credentials for a test user (username: user, password: User123456)**_
+
+
 - Repository: https://github.com/anastasia-martyniuk/taxi-service
 
 ![Website Interface](img.png)
