@@ -3,7 +3,23 @@ Helps drivers create their own profile with detailed information and gives them 
 
 Helps the owner of the service to monitor the number of staff.
 
-## Installing / Getting started
+## Features
+
+What's all the bells and whistles this project can perform?
+* Authentication functionality for Driver/User
+* IPowerful admin panel for advanced managing
+* Managing drivers, cars & manufacturers directly from website
+
+## Links
+- Project homepage: https://cute-taxi-service.herokuapp.com/
+
+  _**Credentials for a test user (username: user, password: User123456)**_
+
+
+![Website Interface](img.png)
+
+
+## Installing
 
 Python3 must be already installed!
 
@@ -24,20 +40,3 @@ source venv/bin/activate
 pip install -r requirements.txt
 python manage.py runserver
 ```
-
-## Features
-
-What's all the bells and whistles this project can perform?
-* Authentication functionality for Driver/User
-* IPowerful admin panel for advanced managing
-* Managing drivers, cars & manufacturers directly from website
-
-## Links
-- Project homepage: https://cute-taxi-service.herokuapp.com/
-
-  _**Credentials for a test user (username: user, password: User123456)**_
-
-
-- Repository: https://github.com/anastasia-martyniuk/taxi-service
-
-![Website Interface](img.png)
